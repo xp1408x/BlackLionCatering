@@ -6,7 +6,7 @@ const OurStorySection: React.FC = () => {
     <section 
       id="story"
       className="relative bg-cover bg-center py-20 md:py-32"
-      style={{ backgroundImage: "url('/src/images/our-story-background.svg')" }}
+      style={{ backgroundImage: "url('https://assets.zyrosite.com/A85VN675bJTvnpRk/our-story-background-AQEZ9NxVgyh29DQ9.webp')" }}
     >
       <div className="absolute inset-0 bg-[#282828] opacity-60"></div>  Light overlay for text readability
       <div className="container mx-auto px-4 relative z-10 flex justify-center items-center min-h-[500px]">

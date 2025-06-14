@@ -1,11 +1,12 @@
 import React from 'react';
 import Button from './Button';
+import { IMAGE_BASE_URL } from '../config';
 
 const HeroSection: React.FC = () => {
   return (
     <section 
       className="relative bg-cover bg-center text-white py-32 md:py-48" 
-      style={{ backgroundImage: "url('/src/images/mark_group.svg')" }}
+      style={{ backgroundImage: "url('https://assets.zyrosite.com/A85VN675bJTvnpRk/mark_group-m7VbjrzVvnUj6l2e.webp')" }}
     >
       <div className="absolute inset-0 bg-[#282828] opacity-60"></div> {/* Overlay for text readability */}
       <div className="container mx-auto px-4 relative z-10 text-center">
