@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { EventItem } from '../types';
 import EventCard from './EventCard';
@@ -36,7 +35,7 @@ const EventTypesSection: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         <h3 className="text-2xl text-white">CELEBRATE YOUR LOVE</h3>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">SPECIAL OCCASIONS</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {eventsData.map(event => (
             <EventCard key={event.id} event={event} />
           ))}
