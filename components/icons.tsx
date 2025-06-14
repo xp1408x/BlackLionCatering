@@ -17,8 +17,18 @@ export const GoogleIcon: React.FC<{ className?: string }> = ({ className }) => (
 );
 
 export const FacebookIcon: React.FC<{ className?: string }> = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z" fill="currentColor"/>
+  <svg
+    className={className}
+    width="12.95"
+    height="24"
+    viewBox="0 0 12.95 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M8.63 24V13.07h3.67l.55-4.26H8.63V6.44c0-1.23.34-2.07 2.13-2.07h2.28V.17C12.47.12 11.09 0 9.48 0 6.18 0 4.01 1.99 4.01 5.65v3.16H0v4.26h4.01V24h4.62z"
+      fill="white"
+    />
   </svg>
 );
 
