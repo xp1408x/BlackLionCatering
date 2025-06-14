@@ -10,7 +10,7 @@ interface EventCardProps {
 const EventCard: React.FC<EventCardProps> = ({ event }) => {
   return (
     <div className="bg-black rounded-lg shadow-lg overflow-hidden flex flex-col">
-      <img src={event.imageUrl} alt={event.imageAlt} className="w-full h-48 object-cover"/>
+      <img src={event.imageUrl} alt={event.imageAlt} className="w-full h-[420px] object-cover"/>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold mb-2 text-white">{event.title}</h3>
         {/* Optional description can go here */}

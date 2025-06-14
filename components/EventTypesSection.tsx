@@ -7,25 +7,25 @@ const eventsData: EventItem[] = [
   { 
     id: '1', 
     title: 'Quinceañera Parties', 
-    imageUrl: 'https://picsum.photos/seed/quinceanera/400/300',
+    imageUrl: '/src/images/offer-img-02.svg',
     imageAlt: 'Colorful snacks for a Quinceañera party' 
   },
   { 
     id: '2', 
     title: 'Weddings', 
-    imageUrl: 'https://picsum.photos/seed/weddingfood/400/300',
+    imageUrl: '/src/images/offer-img-03.svg',
     imageAlt: 'Elegant catering for a wedding'
   },
   { 
     id: '3', 
     title: 'Social Events', 
-    imageUrl: 'https://picsum.photos/seed/socialevent/400/300',
+    imageUrl: '/src/images/offer-img-02.svg',
     imageAlt: 'Appetizers for a social event'
   },
   { 
     id: '4', 
     title: 'Corporate Events', 
-    imageUrl: 'https://picsum.photos/seed/corporateevent/400/300',
+    imageUrl: '/src/images/offer-img-03.svg',
     imageAlt: 'Professional catering for a corporate event'
   },
 ];

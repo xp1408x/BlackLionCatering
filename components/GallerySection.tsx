@@ -3,15 +3,15 @@ import React from 'react';
 import { GalleryImage } from '../types';
 
 const galleryImagesData: GalleryImage[] = [
-  { id: 'g1', imageUrl: 'https://picsum.photos/seed/dish1/400/400', altText: 'Delicious plated meal with rice and sides' },
-  { id: 'g2', imageUrl: 'https://picsum.photos/seed/dish2/400/400', altText: 'Golden fried appetizers on a wooden tray' },
-  { id: 'g3', imageUrl: 'https://picsum.photos/seed/dish3/400/400', altText: 'Hearty curry dish with naan bread' },
-  { id: 'g4', imageUrl: 'https://picsum.photos/seed/dish4/400/400', altText: 'Fresh salad with vibrant ingredients' },
-  { id: 'g5', imageUrl: 'https://picsum.photos/seed/dish5/400/400', altText: 'Assortment of desserts' },
-  { id: 'g6', imageUrl: 'https://picsum.photos/seed/dish6/400/400', altText: 'Gourmet pasta dish' },
-  { id: 'g7', imageUrl: 'https://picsum.photos/seed/dish7/400/400', altText: 'Skewers with grilled vegetables and meat' },
-  { id: 'g8', imageUrl: 'https://picsum.photos/seed/dish8/400/400', altText: 'Artistically presented seafood platter' },
-  { id: 'g9', imageUrl: 'https://picsum.photos/seed/dish9/400/400', altText: 'Colorful fruit platter' },
+  { id: 'g1', imageUrl: '/src/images/gallery-02.svg', altText: 'Delicious plated meal with rice and sides' },
+  { id: 'g2', imageUrl: '/src/images/gallery-04.svg', altText: 'Golden fried appetizers on a wooden tray' },
+  { id: 'g3', imageUrl: '/src/images/gallery-08.svg', altText: 'Hearty curry dish with naan bread' },
+  { id: 'g4', imageUrl: '/src/images/gallery-02.svg', altText: 'Fresh salad with vibrant ingredients' },
+  { id: 'g5', imageUrl: '/src/images/gallery-04.svg', altText: 'Assortment of desserts' },
+  { id: 'g6', imageUrl: '/src/images/gallery-08.svg', altText: 'Gourmet pasta dish' },
+  { id: 'g7', imageUrl: '/src/images/gallery-02.svg', altText: 'Skewers with grilled vegetables and meat' },
+  { id: 'g8', imageUrl: '/src/images/gallery-04.svg', altText: 'Artistically presented seafood platter' },
+  { id: 'g9', imageUrl: '/src/images/gallery-08.svg', altText: 'Colorful fruit platter' },
 ];
 
 const GallerySection: React.FC = () => {
