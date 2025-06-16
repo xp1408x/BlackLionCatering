@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Black Lion Catering</title>
+  <meta name="description" content="Black Lion Catering: Modern and elegant catering for weddings, quinceañeras, social and corporate events. Unforgettable flavors and experiences for your celebrations." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
             leagueGothic: ['"League Gothic"', 'sans-serif'],
             roboto: ['Roboto', 'sans-serif'],
           },
@@ -26,10 +25,21 @@
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=League+Gothic&family=Roboto:wght@400&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'League Gothic';
+      src: url('/src/font/LeagueGothic-Regular.woff2') format('truetype');
+      font-weight: 400;
+      font-style: regular;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Roboto';
+      src: url('/src/font/Roboto-Medium.woff2') format('truetype');
+      font-weight: 400;
+      font-style: medium;
+      font-display: swap;
+    }
     body {
       font-family: 'Inter', sans-serif;
     }
