@@ -1,10 +1,10 @@
-
 import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import EventTypesSection from './components/EventTypesSection';
 import OurStorySection from './components/OurStorySection';
 import FoodOnWheelsSection from './components/FoodOnWheelsSection';
+import ReviewCarousel from './components/ReviewCarousel';
 import GallerySection from './components/GallerySection';
 import Footer from './components/Footer';
 
@@ -18,6 +18,7 @@ const App: React.FC = () => {
         <OurStorySection />
         <FoodOnWheelsSection />
         <GallerySection />
+        <ReviewCarousel />
       </main>
       <Footer />
     </div>
