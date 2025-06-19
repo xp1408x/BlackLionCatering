@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 
 const reviews = [
   {
-    name: 'Ana Martínez',
-    text: '¡El servicio fue impecable y la comida deliciosa! Sin duda los volveré a contratar.',
+    name: "Emily Johnson",
+    text: "“The service was excellent and the food was delicious. I would definitely hire them again for my next event!”"
   },
   {
-    name: 'Carlos López',
-    text: 'Excelente atención y presentación. Todos los invitados quedaron encantados.',
+    name: "Michael Smith",
+    text: "“Everything was perfect, from the presentation to the taste. Highly recommended!”"
   },
   {
-    name: 'María Fernández',
-    text: 'La mejor experiencia de catering que hemos tenido. ¡Recomendados al 100%!',
+    name: "Jessica Williams",
+    text: "“The team was very professional and attentive to every detail. Our guests were delighted.”"
   },
   {
-    name: 'Jorge Ramírez',
-    text: 'Puntuales, profesionales y la comida espectacular. ¡Gracias por todo!',
+    name: "David Brown",
+    text: "“Incredible experience! The food exceeded our expectations and the staff was very friendly.”"
   },
   {
-    name: 'Lucía Torres',
-    text: 'Superaron nuestras expectativas. El menú fue variado y exquisito.',
-  },
+    name: "Ashley Miller",
+    text: "“Punctual, organized, and with a great variety of dishes. I will definitely recommend them.”"
+  }
 ];
 
 const ReviewCarousel: React.FC = () => {
@@ -42,7 +42,7 @@ const ReviewCarousel: React.FC = () => {
   return (
     <section className="w-full py-20 flex flex-col items-center relative bg-black">
       <h2 className="text-[64px] font-bold text-center mb-2 uppercase text-white">REVIEWS</h2>
-      <h3 className="text-[40px] text-center mb-10 text-white font-normal">Review by - Google</h3>
+      <h3 className="text-[40px] font-roboto text-center mb-10 text-white font-normal">Review by - Google</h3>
       <div className="flex items-center justify-center w-full max-w-3xl mx-auto relative">
         {/* Flecha Izquierda */}
         <button onClick={prev} aria-label="Anterior" className="absolute left-0 z-10 p-2">
@@ -55,7 +55,7 @@ const ReviewCarousel: React.FC = () => {
               animating ? (direction === 'right' ? 'animate-fade-left' : 'animate-fade-right') : ''
             }`}
           >
-            <span className="text-[28px] font-semibold text-white mr-4">{reviews[active].name}</span>
+            <span className="text-[28px] font-roboto text-white mr-4">{reviews[active].name}</span>
             {/* Estrellas */}
             <svg width="168" height="24" viewBox="0 0 168 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               {[...Array(5)].map((_, i) => (

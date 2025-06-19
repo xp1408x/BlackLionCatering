@@ -1,0 +1,31 @@
+import React from "react";
+
+const PromoSection = () => (
+  <section
+    className="w-full relative flex items-center justify-center min-h-[600px] bg-black overflow-hidden"
+    style={{
+      backgroundImage: `url('/images/dumplings-bg.jpg')`, // Cambia esta ruta por la de tu imagen cuando la tengas
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}
+  >
+    {/* Overlay negro semitransparente para mejorar contraste */}
+    <div className="absolute inset-0 bg-black/60 z-0" />
+    <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-center px-4 py-20">
+      <h2 className="text-white text-[64px] uppercase mb-6 drop-shadow-lg">
+        DISCOUNT UP TO 30% ONLY THIS MONTH
+      </h2>
+      <p className="text-white text-[40px] font-roboto mb-10 drop-shadow-lg">
+        Quality and flavor for your celebrations. Place <br /> your order now and enjoy!
+      </p>
+      <button
+        className="text-white text-[34px] font-league-gothic px-10 py-4 border-2 border-white rounded-lg hover:bg-white/40 transition"
+      >
+        READ MORE
+      </button>
+    </div>
+  </section>
+);
+
+export default PromoSection;

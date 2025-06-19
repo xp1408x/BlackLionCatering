@@ -7,6 +7,7 @@ import FoodOnWheelsSection from './components/FoodOnWheelsSection';
 import ReviewCarousel from './components/ReviewCarousel';
 import GallerySection from './components/GallerySection';
 import Footer from './components/Footer';
+import PromoSection from './components/PromoSection';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <FoodOnWheelsSection />
         <GallerySection />
         <ReviewCarousel />
+        <PromoSection />
       </main>
       <Footer />
     </div>
