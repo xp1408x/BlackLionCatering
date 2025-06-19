@@ -1,0 +1,19 @@
+:root {
+  --gold-brand: #765E32;
+}
+.font-league-gothic {
+  font-family: 'League Gothic', sans-serif;
+}
+.text-gold-brand {
+  color: var(--gold-brand);
+}
+.titleText34 {
+  font-family: 'League Gothic', sans-serif;
+  color: var(--gold-brand);
+  font-size: 34px;
+}
+.subtitleText24 {
+  font-size: 24px;
+  color: #2B2B2B;
+  line-height: 1.2;
+}

@@ -1,7 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Button from './Button';
+import OurStoryModal from './popUp/OurStoryModal';
 
 const OurStorySection: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // Tipado explícito para useState
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <section 
       id="story"
@@ -20,9 +31,13 @@ const OurStorySection: React.FC = () => {
             At the heart of every celebration, whether it's the "I do" of a wedding, the vibrant joy of a quinceañera, the camaraderie of a social event, or the sophistication of a corporate meeting, lies a universal desire: to create lasting memories. It was with this deep conviction that Black Lion Catering was born, not just as a food service, but as a promise to transform every event into an unforgettable experience. Black Lion Catering is proud to be the trusted partner for your events. Because in the end, we don't just serve food; we create moments that last, celebrations that resonate, and memories that will be treasured forever. Allow us to be part of your next story.
           </p>
           <div className="text-center">
-            <Button variant="outline-white" size="lg" className="text-[34px]">
+            <Button onClick={handleOpenModal} variant="outline-white" size="lg" className="text-[34px]">
               LEARN MORE
             </Button>
+            <OurStoryModal
+              isOpen={isModalOpen}
+              onClose={handleCloseModal}
+            />
           </div>
         </div>
       </div>
