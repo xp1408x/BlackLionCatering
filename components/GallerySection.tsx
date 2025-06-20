@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GalleryImage } from '../types';
 import { IMAGE_BASE_URL } from '../config';
@@ -29,6 +28,8 @@ const GallerySection: React.FC = () => {
                 src={IMAGE_BASE_URL + image.imageUrl} 
                 alt={image.altText} 
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                loading="lazy"
+                referrerPolicy="no-referrer"
               />
             </div>
           ))}

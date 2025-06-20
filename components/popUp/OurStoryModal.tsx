@@ -1,11 +1,12 @@
 // components/OurStoryModal.tsx
 import React, { useEffect, useRef, useCallback } from 'react';
+import { IMAGE_BASE_URL } from '../../config';
 
 // Importa las imágenes desde la carpeta pública (public/src/images/modalImage/)
-const chefHatIcon = '/src/images/modalImage/ourStory1.svg';
-const starsIcon = '/src/images/modalImage/ourStory2.svg';
-const leafIcon = '/src/images/modalImage/ourStory3.svg';
-const closeIcon = '/src/images/modalImage/btnClose.svg';
+const chefHatIcon = IMAGE_BASE_URL + 'modalImage/ourStory1.svg';
+const starsIcon = IMAGE_BASE_URL + 'modalImage/ourStory2.svg';
+const leafIcon = IMAGE_BASE_URL + 'modalImage/ourStory3.svg';
+const closeIcon = IMAGE_BASE_URL + 'modalImage/btnClose.svg';
 
 // Define los tipos para las props del componente OurStoryModal
 interface OurStoryModalProps {
@@ -98,7 +99,7 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
                      w-10 h-10 flex items-center justify-center outline-none focus:ring-2 focus:ring-blue-500 rounded-full bg-transparent"
           aria-label="Cerrar"
         >
-          <img src={closeIcon} alt="Cerrar" className="w-9 h-9" />
+          <img src={closeIcon} alt="Cerrar" className="w-9 h-9" loading="lazy" referrerPolicy="no-referrer" />
         </button>
 
         {/* Título oculto para accesibilidad */}
@@ -108,7 +109,7 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-4 h-full">
           {/* Pilar: Supreme Quality */}
           <div className="flex flex-col items-center text-center p-4">
-            <img src={chefHatIcon} alt="Chef's hat icon" className="w-20 h-20 mb-4 text-yellow-700" />
+            <img src={chefHatIcon} alt="Chef's hat icon" className="w-20 h-20 mb-4 text-yellow-700" loading="lazy" referrerPolicy="no-referrer" />
             <h3 className="titleText34 mb-2">Supreme<br />Quality</h3>
             <p className="subtitleText24">
               We select the best ingredients and take care of every detail in their preparation.
@@ -117,7 +118,7 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
 
           {/* Pilar: Personalized Service */}
           <div className="flex flex-col items-center text-center p-4">
-            <img src={starsIcon} alt="Stars icon" className="w-20 h-20 mb-4 text-yellow-700" />
+            <img src={starsIcon} alt="Stars icon" className="w-20 h-20 mb-4 text-yellow-700" loading="lazy" referrerPolicy="no-referrer" />
             <h3 className="titleText34 mb-2">Personalized<br />Service</h3>
             <p className="subtitleText24">
               We adapt to your needs to offer you a unique experience.
@@ -126,7 +127,7 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
 
           {/* Pilar: Fresh Commitment */}
           <div className="flex flex-col items-center text-center p-4">
-            <img src={leafIcon} alt="Leaf icon" className="w-20 h-20 mb-4 text-yellow-700" />
+            <img src={leafIcon} alt="Leaf icon" className="w-20 h-20 mb-4 text-yellow-700" loading="lazy" referrerPolicy="no-referrer" />
             <h3 className="titleText34 mb-2">Fresh<br />Commitment</h3>
             <p className="subtitleText24">
               We prioritize local and seasonal products to guarantee freshness and flavor.

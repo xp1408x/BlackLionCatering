@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Si tienes un sitemap, reemplaza la URL de ejemplo por la tuya real:
+# Sitemap: https://tudominio.com/sitemap.xml

@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 
 const reviews = [
   {
-    name: "Emily Johnson",
-    text: "“The service was excellent and the food was delicious. I would definitely hire them again for my next event!”"
+    name: "Emily Johnson:",
+    text: "The service was excellent and the food was delicious. I would definitely hire them again for my next event!"
   },
   {
-    name: "Michael Smith",
-    text: "“Everything was perfect, from the presentation to the taste. Highly recommended!”"
+    name: "Michael Smith:",
+    text: "Everything was perfect, from the presentation to the taste. Highly recommended!"
   },
   {
-    name: "Jessica Williams",
-    text: "“The team was very professional and attentive to every detail. Our guests were delighted.”"
+    name: "Jessica Williams:",
+    text: "The team was very professional and attentive to every detail. Our guests were delighted."
   },
   {
-    name: "David Brown",
-    text: "“Incredible experience! The food exceeded our expectations and the staff was very friendly.”"
+    name: "David Brown:",
+    text: "Incredible experience! The food exceeded our expectations and the staff was very friendly."
   },
   {
-    name: "Ashley Miller",
-    text: "“Punctual, organized, and with a great variety of dishes. I will definitely recommend them.”"
+    name: "Ashley Miller:",
+    text: "Punctual, organized, and with a great variety of dishes. I will definitely recommend them."
   }
 ];
 
@@ -41,8 +41,8 @@ const ReviewCarousel: React.FC = () => {
 
   return (
     <section className="w-full py-20 flex flex-col items-center relative bg-black">
-      <h2 className="text-[64px] font-bold text-center mb-2 uppercase text-white">REVIEWS</h2>
-      <h3 className="text-[40px] font-roboto text-center mb-10 text-white font-normal">Review by - Google</h3>
+      <h2 className="text-[64px] text-center mb-2 uppercase text-white">REVIEWS</h2>
+      <div className="text-[40px] font-roboto text-center font-roboto mb-10 text-white font-normal">Review by - Google</div>
       <div className="flex items-center justify-center w-full max-w-3xl mx-auto relative">
         {/* Flecha Izquierda */}
         <button onClick={prev} aria-label="Anterior" className="absolute left-0 z-10 p-2">
@@ -69,13 +69,13 @@ const ReviewCarousel: React.FC = () => {
             </svg>
           </div>
           <div
-            className={`flex items-center justify-center w-full transition-all duration-300 ease-in-out ${
+            className={`flex items-center justify-center w-full transition-all duration-300 ease-in-out px-4 ${
               animating ? (direction === 'right' ? 'animate-fade-left' : 'animate-fade-right') : ''
             }`}
           >
-            <span className="text-white text-[64px] font-bold mr-4">“</span>
+            <span className="text-white text-[64px] font-bold mr-2">“</span>
             <p className="text-white text-[28px] text-center max-w-2xl flex-1">{reviews[active].text}</p>
-            <span className="text-white text-[64px] font-bold ml-4">”</span>
+            <span className="text-white text-[64px] font-bold ml-2">”</span>
           </div>
         </div>
         {/* Flecha Derecha */}
@@ -93,7 +93,7 @@ const ReviewCarousel: React.FC = () => {
               active === idx ? 'bg-white opacity-100 w-5 h-5' : 'bg-transparent opacity-50 w-4 h-4'
             }`}
             style={{ outline: 'none' }}
-            aria-label={`Ir a la reseña ${idx + 1}`}
+            aria-label={`Go to Review ${idx + 1}`}
           />
         ))}
       </div>

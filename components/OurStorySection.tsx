@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Button from './Button';
 import OurStoryModal from './popUp/OurStoryModal';
+import { IMAGE_BASE_URL } from '../config';
 
 const OurStorySection: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // Tipado explícito para useState
@@ -17,7 +18,7 @@ const OurStorySection: React.FC = () => {
     <section 
       id="story"
       className="relative bg-cover bg-center py-20 md:py-32"
-      style={{ backgroundImage: "url('https://assets.zyrosite.com/A85VN675bJTvnpRk/our-story-background-AQEZ9NxVgyh29DQ9.webp')" }}
+      style={{ backgroundImage: `url('${IMAGE_BASE_URL}our-story-background-AQEZ9NxVgyh29DQ9.webp')` }}
     >
       <div className="absolute inset-0 bg-[#282828] opacity-60"></div>  
       <div className="container mx-auto px-4 relative z-10 flex justify-center items-center min-h-[500px]">

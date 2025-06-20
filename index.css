@@ -11,6 +11,7 @@
   font-family: 'League Gothic', sans-serif;
   color: var(--gold-brand);
   font-size: 34px;
+  line-height: 1.2;
 }
 .subtitleText24 {
   font-size: 24px;
