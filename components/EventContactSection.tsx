@@ -107,15 +107,16 @@ const EventContactSection = () => (
               <option value="" disabled>
                 Select...
               </option>
-              <option value="12:00">12:00 PM</option>
-              <option value="13:00">01:00 PM</option>
-              <option value="14:00">02:00 PM</option>
-              <option value="15:00">03:00 PM</option>
+              <option value="8:00">8:00 AM</option>
+              <option value="8:30">08:30 AM</option>
+              <option value="9:00">09:00 AM</option>
+              <option value="9:30">09:30 AM</option>
+              <option value="10:00">10:00 AM</option>
               <option value="16:00">04:00 PM</option>
-              <option value="17:00">05:00 PM</option>
-              <option value="18:00">06:00 PM</option>
-              <option value="19:00">07:00 PM</option>
+              <option value="16:30">04:30 PM</option>
+              <option value="19:30">07:30 PM</option>
               <option value="20:00">08:00 PM</option>
+              <option value="20:30">08:30 PM</option>
               <option value="21:00">09:00 PM</option>
             </select>
           </div>
