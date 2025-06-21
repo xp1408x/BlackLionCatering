@@ -8,6 +8,7 @@ import ReviewCarousel from './components/ReviewCarousel';
 import GallerySection from './components/GallerySection';
 import Footer from './components/Footer';
 import PromoSection from './components/PromoSection';
+import EventContactSection from './components/EventContactSection';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <GallerySection />
         <ReviewCarousel />
         <PromoSection />
+        <EventContactSection />
       </main>
       <Footer />
     </div>
