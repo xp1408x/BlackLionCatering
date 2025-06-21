@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IMAGE_BASE_URL } from '../config';
 
 const reviews = [
   {
@@ -40,7 +41,12 @@ const ReviewCarousel: React.FC = () => {
   const next = () => goTo(active === reviews.length - 1 ? 0 : active + 1);
 
   return (
-    <section className="w-full py-20 flex flex-col items-center relative bg-black">
+    <section className="w-full py-20 flex flex-col items-center relative bg-black"
+      style={{
+          backgroundImage: `url('${IMAGE_BASE_URL}review-background-mP4MwrX2elsnb7lQ.webp')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+      }}>
       <h2 className="text-[64px] text-center mb-2 uppercase text-white">REVIEWS</h2>
       <div className="text-[40px] font-roboto text-center font-roboto mb-10 text-white font-normal">Review by - Google</div>
       <div className="flex items-center justify-center w-full max-w-3xl mx-auto relative">

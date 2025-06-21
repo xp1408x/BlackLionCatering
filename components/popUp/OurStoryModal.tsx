@@ -3,10 +3,10 @@ import React, { useEffect, useRef, useCallback } from 'react';
 import { IMAGE_BASE_URL } from '../../config';
 
 // Importa las imágenes desde la carpeta pública (public/src/images/modalImage/)
-const chefHatIcon = IMAGE_BASE_URL + 'modalImage/ourStory1.svg';
-const starsIcon = IMAGE_BASE_URL + 'modalImage/ourStory2.svg';
-const leafIcon = IMAGE_BASE_URL + 'modalImage/ourStory3.svg';
-const closeIcon = IMAGE_BASE_URL + 'modalImage/btnClose.svg';
+const chefHatIcon = IMAGE_BASE_URL + 'ourstory1-YrDJ95Pz1RhGVEp2.webp';
+const starsIcon = IMAGE_BASE_URL + 'ourstory2-YbNJOl3eaQuqreav.webp';
+const leafIcon = IMAGE_BASE_URL + 'ourstory3-AQEZQa0G4zIMN3Z1.webp';
+const closeIcon = IMAGE_BASE_URL + 'btnclose-YNq29eqL5qTwOG37.webp';
 
 // Define los tipos para las props del componente OurStoryModal
 interface OurStoryModalProps {
@@ -85,8 +85,8 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
       <div
         ref={modalRef}
         className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                   bg-white p-6 md:p-8 rounded-[50px] shadow-2xl z-[1001]
-                   max-w-4xl w-[90vw] h-[500px] animate-fade-in-scale-up"
+             bg-white p-2 pt-6 md:p-8 rounded-2xl md:rounded-[50px] shadow-2xl z-[1001]
+             max-w-[98vw] md:max-w-4xl w-[98vw] h-auto max-h-[95vh] md:h-[500px] animate-fade-in-scale-up overflow-y-auto"
         role="dialog"
         aria-modal="true"   
         aria-labelledby="modal-title"
@@ -96,7 +96,7 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
         <button
           onClick={handleClose}
           className="absolute top-14 right-14 text-gray-500 hover:text-gray-700
-                     w-10 h-10 flex items-center justify-center outline-none focus:ring-2 focus:ring-blue-500 rounded-full bg-transparent"
+                     w-10 h-10 flex flex-col md:flex-row items-center justify-center outline-none focus:ring-2 focus:ring-blue-500 rounded-full bg-transparent"
           aria-label="Cerrar"
         >
           <img src={closeIcon} alt="Cerrar" className="w-9 h-9" loading="lazy" referrerPolicy="no-referrer" />

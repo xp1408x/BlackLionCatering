@@ -5,6 +5,7 @@ import { IMAGE_BASE_URL } from '../config';
 const HeroSection: React.FC = () => {
   return (
     <section 
+      id="home"
       className="relative bg-cover bg-center text-white py-32 md:py-48" 
       style={{ backgroundImage: `url('${IMAGE_BASE_URL}mark_group-m7VbjrzVvnUj6l2e.webp')` }}
     >
@@ -18,7 +19,7 @@ const HeroSection: React.FC = () => {
           Come try our delicious options
         </p>
         <Button variant="outline-white" size="lg" className="text-[34px]">
-          BOOK NOW
+          ORDER NOW
         </Button>
       </div>
     </section>

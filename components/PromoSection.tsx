@@ -6,7 +6,7 @@ const PromoSection = () => (
   <section
     className="w-full relative flex items-center justify-center min-h-[600px] bg-black overflow-hidden"
     style={{
-      backgroundImage: `url('${IMAGE_BASE_URL}dumplings-bg.jpg')`, // Cambia esta ruta por la de tu imagen cuando la tengas
+      backgroundImage: `url('${IMAGE_BASE_URL}discount-background-YKblLgoJzLfRv2pN.webp')`, // Cambia esta ruta por la de tu imagen cuando la tengas
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",

@@ -3,25 +3,25 @@ import { EventItem } from '../types';
 import EventCard from './EventCard';
 
 const eventsData: EventItem[] = [
-  { 
+  {
     id: '1', 
     title: 'Quinceañera Parties', 
     imageUrl: 'offer-img-02-m6Lb1gZrpZSpxPng.webp',
     imageAlt: 'Colorful snacks for a Quinceañera party' 
   },
-  { 
+  {
     id: '2', 
     title: 'Weddings', 
     imageUrl: 'offer-img-03-mnlJk1W5Q6HpW8og.webp',
     imageAlt: 'Elegant catering for a wedding'
   },
-  { 
+  {
     id: '3', 
     title: 'Social Events', 
     imageUrl: 'offer-img-02-m6Lb1gZrpZSpxPng.webp',
     imageAlt: 'Appetizers for a social event'
   },
-  { 
+  {
     id: '4', 
     title: 'Corporate Events', 
     imageUrl: 'offer-img-03-mnlJk1W5Q6HpW8og.webp',
