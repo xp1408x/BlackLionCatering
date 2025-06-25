@@ -18,9 +18,6 @@ const GallerySection: React.FC = () => {
   return (
     <section id="gallery" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12">
-          A Glimpse of Our Creations
-        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
           {galleryImagesData.map((image) => (
             <div key={image.id} className="aspect-square overflow-hidden rounded-lg shadow-lg group">

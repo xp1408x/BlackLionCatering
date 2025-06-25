@@ -7,7 +7,7 @@ const EventContactSection = () => (
     className="w-full py-20"
     style={{ backgroundColor: bgColor }}
   >
-    <div className="max-w-5xl mx-auto px-4">
+    <div id="contact" className="max-w-5xl mx-auto px-4">
       {/* Título */}
       <h2 className="text-center text-[64px] font-league-gothic uppercase mb-4 text-[#2D2D2D]">
         TELL US ABOUT YOUR EVENT!

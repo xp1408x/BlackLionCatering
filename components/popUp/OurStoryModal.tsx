@@ -110,7 +110,7 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
           {/* Pilar: Supreme Quality */}
           <div className="flex flex-col items-center text-center p-4">
             <img src={chefHatIcon} alt="Chef's hat icon" className="w-20 h-20 mb-4 text-yellow-700" loading="lazy" referrerPolicy="no-referrer" />
-            <h3 className="titleText34 mb-2">Supreme<br />Quality</h3>
+            <h3 className="titleText34Gold mb-2">Supreme<br />Quality</h3>
             <p className="subtitleText24">
               We select the best ingredients and take care of every detail in their preparation.
             </p>
@@ -119,7 +119,7 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
           {/* Pilar: Personalized Service */}
           <div className="flex flex-col items-center text-center p-4">
             <img src={starsIcon} alt="Stars icon" className="w-20 h-20 mb-4 text-yellow-700" loading="lazy" referrerPolicy="no-referrer" />
-            <h3 className="titleText34 mb-2">Personalized<br />Service</h3>
+            <h3 className="titleText34Gold mb-2">Personalized<br />Service</h3>
             <p className="subtitleText24">
               We adapt to your needs to offer you a unique experience.
             </p>
@@ -128,7 +128,7 @@ const OurStoryModal: React.FC<OurStoryModalProps> = ({ isOpen, onClose }) => {
           {/* Pilar: Fresh Commitment */}
           <div className="flex flex-col items-center text-center p-4">
             <img src={leafIcon} alt="Leaf icon" className="w-20 h-20 mb-4 text-yellow-700" loading="lazy" referrerPolicy="no-referrer" />
-            <h3 className="titleText34 mb-2">Fresh<br />Commitment</h3>
+            <h3 className="titleText34Gold mb-2">Fresh<br />Commitment</h3>
             <p className="subtitleText24">
               We prioritize local and seasonal products to guarantee freshness and flavor.
             </p>

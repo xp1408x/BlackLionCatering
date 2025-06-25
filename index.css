@@ -7,11 +7,26 @@
 .text-gold-brand {
   color: var(--gold-brand);
 }
-.titleText34 {
+.titleText34Gold {
   font-family: 'League Gothic', sans-serif;
   color: var(--gold-brand);
   font-size: 34px;
   line-height: 1.2;
+}
+.titleText34 {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 34px;
+  line-height: 1.2;
+}
+.titleText24 {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.subtitleText16 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.0;
 }
 .subtitleText24 {
   font-size: 24px;
