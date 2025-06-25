@@ -1,31 +1,36 @@
 import React from 'react';
 import { EventItem } from '../types';
 import EventCard from './EventCard';
+import { Link } from 'react-router-dom';
 
 const eventsData: EventItem[] = [
   { 
     id: '1', 
     title: 'Quinceañera Parties', 
     imageUrl: 'offer-img-02-m6Lb1gZrpZSpxPng.webp',
-    imageAlt: 'Colorful snacks for a Quinceañera party' 
+    imageAlt: 'Colorful snacks for a Quinceañera party',
+    link: '/menu/quinceanera'
   },
   { 
     id: '2', 
     title: 'Weddings', 
     imageUrl: 'offer-img-03-mnlJk1W5Q6HpW8og.webp',
-    imageAlt: 'Elegant catering for a wedding'
+    imageAlt: 'Elegant catering for a wedding',
+    link: '/menu/weddings'
   },
   { 
     id: '3', 
     title: 'Social Events', 
     imageUrl: 'offer-img-02-m6Lb1gZrpZSpxPng.webp',
-    imageAlt: 'Appetizers for a social event'
+    imageAlt: 'Appetizers for a social event',
+    link: '/menu/social-events'
   },
   { 
     id: '4', 
     title: 'Corporate Events', 
     imageUrl: 'offer-img-03-mnlJk1W5Q6HpW8og.webp',
-    imageAlt: 'Professional catering for a corporate event'
+    imageAlt: 'Professional catering for a corporate event',
+    link: '/menu/corporate-events'
   },
 ];
 
@@ -37,7 +42,9 @@ const EventTypesSection: React.FC = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">SPECIAL OCCASIONS</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {eventsData.map(event => (
-            <EventCard key={event.id} event={event} />
+            <Link key={event.id} to={event.link} className="block">
+              <EventCard event={event} />
+            </Link>
           ))}
         </div>
       </div>

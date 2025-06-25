@@ -166,7 +166,8 @@ const EventContactSection = () => (
   <div className="flex justify-center">
     <button
       type="submit"
-      className="bg-black text-white text-[34px] font-bold uppercase px-16 py-4 rounded-lg hover:bg-[#2D2D2D] transition"
+      className="bg-black text-white text-[34px] font-league-gothic uppercase rounded-lg hover:bg-[#2D2D2D] transition"
+      style={{ width: '185px', height: '45px' }}
     >
       SEND
     </button>
