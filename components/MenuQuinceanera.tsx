@@ -1,8 +1,11 @@
 import React from "react";
+import { IMAGE_BASE_URL } from '../config';
+
+const image = `${IMAGE_BASE_URL}gallery-02-mePJalxG6VIl3poR.webp`;
 
 const menuItems = Array(8).fill({
   title: "Chicken With Liquid Filling",
-  img: "/images/chicken-liquid-filling.jpg",
+  img: image,
   desc: "This gourmet dish comes ready to eat, perfect for enjoying with minimal effort. Enjoy this sumptuous dish and serve it to your guests at a party. This delicious delicacy from Ghanaian cuisine is prepared with tender pieces of chicken in a perfect balance of aromatic spices. The subtle yet unique flavor of fenugreek enhances the flavor of the chicken and makes this a truly refreshing and delicious dish."
 });
 
@@ -26,7 +29,7 @@ const MenuQuinceanera = () => (
             <div className="flex items-center mb-2">
               <h3 className="text-2xl font-roboto text-[#181818] flex-1">{item.title}</h3>
               {/* Logo pequeño decorativo */}
-              <img src="/images/logo-bubble-small.svg" alt="Logo" className="w-8 h-8 ml-4" />
+              <img src={"/images/logo-bubble-small.svg"} alt="Logo" className="w-8 h-8 ml-4" />
             </div>
             <p className="text-[#181818] mb-4">
               {item.desc}
