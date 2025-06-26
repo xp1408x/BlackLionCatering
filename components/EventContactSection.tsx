@@ -25,7 +25,7 @@ const EventContactSection = () => (
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
     {/* Full Name */}
     <div>
-      <label className="block text-lg font-semibold mb-2 text-[#2D2D2D]">
+      <label className="block text-lg font-roboto mb-2 text-[#2D2D2D]">
         Full Name <span className="text-red-600">*</span>
       </label>
       <input
@@ -38,7 +38,7 @@ const EventContactSection = () => (
     </div>
     {/* Number of People */}
     <div>
-      <label className="block text-lg font-semibold mb-2 text-[#2D2D2D]">
+      <label className="block text-lg font-roboto mb-2 text-[#2D2D2D]">
         Number of People <span className="text-red-600">*</span>
       </label>
       <select
@@ -63,7 +63,7 @@ const EventContactSection = () => (
     </div>
     {/* Select Date */}
     <div>
-      <label className="block text-lg font-semibold mb-2 text-[#2D2D2D]">
+      <label className="block text-lg font-roboto mb-2 text-[#2D2D2D]">
         Select Date <span className="text-red-600">*</span>
       </label>
       <input
@@ -78,7 +78,7 @@ const EventContactSection = () => (
   <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
     {/* Phone */}
     <div>
-      <label className="block text-lg font-semibold mb-2 text-[#2D2D2D]">
+      <label className="block text-lg font-roboto mb-2 text-[#2D2D2D]">
         Phone <span className="text-red-600">*</span>
       </label>
       <input
@@ -91,7 +91,7 @@ const EventContactSection = () => (
     </div>
     {/* Email */}
     <div>
-      <label className="block text-lg font-semibold mb-2 text-[#2D2D2D]">
+      <label className="block text-lg font-roboto mb-2 text-[#2D2D2D]">
         Email <span className="text-red-600">*</span>
       </label>
       <input
@@ -104,7 +104,7 @@ const EventContactSection = () => (
     </div>
     {/* Select Time */}
     <div>
-      <label className="block text-lg font-semibold mb-2 text-[#2D2D2D]">
+      <label className="block text-lg font-roboto mb-2 text-[#2D2D2D]">
         Select Time <span className="text-red-600">*</span>
       </label>
       <select
@@ -121,8 +121,24 @@ const EventContactSection = () => (
         <option value="9:00">09:00 AM</option>
         <option value="9:30">09:30 AM</option>
         <option value="10:00">10:00 AM</option>
+        <option value="10:30">10:30 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="11:30">11:30 AM</option>
+        <option value="12:00">12:00 PM</option>
+        <option value="12:30">12:30 PM</option>
+        <option value="13:00">01:00 PM</option>
+        <option value="13:30">01:30 PM</option>
+        <option value="14:00">02:00 PM</option>
+        <option value="14:30">02:30 PM</option>
+        <option value="15:00">03:00 PM</option>
+        <option value="15:30">03:30 PM</option>
         <option value="16:00">04:00 PM</option>
         <option value="16:30">04:30 PM</option>
+        <option value="17:00">05:00 PM</option>
+        <option value="17:30">05:30 PM</option>
+        <option value="18:00">06:00 PM</option>
+        <option value="18:30">06:30 PM</option>
+        <option value="19:00">07:00 PM</option>
         <option value="19:30">07:30 PM</option>
         <option value="20:00">08:00 PM</option>
         <option value="20:30">08:30 PM</option>
@@ -131,7 +147,7 @@ const EventContactSection = () => (
     </div>
     {/* Select Occasion */}
     <div>
-      <label className="block text-lg font-semibold mb-2 text-[#2D2D2D]">
+      <label className="block text-lg font-roboto mb-2 text-[#2D2D2D]">
         Select Occasion <span className="text-red-600">*</span>
       </label>
       <select
@@ -152,7 +168,7 @@ const EventContactSection = () => (
   </div>
   {/* Description / Request */}
   <div className="mb-8">
-    <label className="block text-lg font-semibold mb-2 text-[#2D2D2D]">
+    <label className="block text-lg font-roboto mb-2 text-[#2D2D2D]">
       Description / Request (optional)
     </label>
     <textarea
